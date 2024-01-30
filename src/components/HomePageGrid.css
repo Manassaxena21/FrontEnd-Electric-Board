@@ -1,0 +1,135 @@
+/* src/components/HomePageGrid.css */
+
+.table-container {
+    margin-top: 30px;
+    padding: 5px;
+}
+h1{
+    color: rgb(126, 50, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: 2px;
+}
+
+table {
+    margin-left: 10%;
+    width: 80%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    font-weight: bolder;
+    color: white;
+    background-color: orange;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #000;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.details-table-container {
+    margin-top: 20px;
+}
+
+.details-table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-left: 20%;
+}
+
+.details-table th, .details-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.details-table th {
+    background-color: #4caf50;
+    color: white;
+}
+.button-back{
+    margin-left: 20%;
+}
+.button-edit{
+    background-color: blue;
+}
+.upper-tab{
+    display: flex;
+    padding: 2px 3px;
+    margin-left: 20%;
+}
+.pagenation-class
+{
+    margin-left: -10%;
+    padding: 4px 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 2px;
+}
+.search-bar
+{
+    margin-left: 25%;
+    padding: 4px 4px;;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+}
+.datepicker
+{
+    margin-left: 20%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+.date-icon {
+    top: 50%;
+    left: -18px;
+     /* Adjust this value to your preference for the icon's position */
+    transform: translateY(-50%);
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    padding-bottom: 7px;
+    
+}
+.react-datepicker__close-icon {
+    position: relative;
+}
+.search-bar input{
+    border-radius: 22px;
+}
+.button-cancel
+{
+    background-color: red;
+}
+.pagenation-class label{
+    color: rgb(126, 50, 0);
+    font: 1em sans-serif;
+    font-weight: bolder;
+}
+h2{
+    margin-left: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(126, 50, 0);
+}

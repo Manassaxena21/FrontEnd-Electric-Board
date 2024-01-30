@@ -1,0 +1,78 @@
+nav {
+    width: 100%;
+    background-color: #cd7e0a;
+    height: 70px;
+    position: sticky;
+    justify-content: space-between;
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 1000; /* Adjust as needed, ensure it's higher than other elements */
+}
+
+ul {
+    margin-left: 70%; /* Push the ul to the right */
+    display: flex;
+    padding: 0; /* Remove default padding */
+    margin-top: -4%;
+}
+
+li {
+    margin-right: 40px;
+    list-style: none;
+    text-decoration: solid;
+    color: white; /* Add text color for better visibility */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav ul li a{
+    text-decoration: solid;
+    color: white;
+    font-weight: bolder;
+}
+
+nav ul li a:hover
+{
+    color: rgb(221, 218, 30);
+}
+
+.logo {
+    margin-left: 4%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+.logo::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: rgb(248, 248, 238); /* Bulb color */
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1); /* Scale up on hover */
+  }
+  
+  .logo:hover::before {
+    transform: translate(-50%, -50%) scale(1); /* Scale up the bulb on hover */
+  }
+
+  .logo:hover {
+    filter: brightness(1.5); /* Increase brightness on hover */
+    animation: glow 1s infinite; /* Add the glowing animation on hover */
+  }
+  
+  @keyframes glow {
+    0% {
+      filter: brightness(1);
+    }
+    50% {
+      filter: brightness(1.5);
+    }
+    100% {
+      filter: brightness(1);
+    }
+  }
